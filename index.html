@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darshil Dave | Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      background: linear-gradient(135deg, #1f2937, #3b82f6);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+    header a {
+      color: #e0f2fe;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      color: #1f2937;
+      border-left: 5px solid #3b82f6;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 12px;
+      padding: 10px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #e5e7eb;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .download-resume {
+      margin-top: 10px;
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .download-resume:hover {
+      background: #2563eb;
+    }
+    .dark-mode {
+      background: #1e1e1e;
+      color: #f9f9f9;
+    }
+    .dark-mode header {
+      background: linear-gradient(135deg, #0f172a, #1e40af);
+    }
+    .dark-mode li {
+      background: #2c2c2c;
+    }
+    .dark-mode a {
+      color: #93c5fd;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body onload="fadeSections()">
+  <button class="toggle" onclick="toggleMode()">Toggle Dark Mode</button>
+  <header>
+    <h1>Darshil Dave</h1>
+    <p>Data Analyst | Data Science & Statistics Student</p>
+    <p>📍 Winnipeg, Manitoba | 📧 <a href="mailto:dave.darshil49@gmail.com">dave.darshil49@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/darshil-dave-ab49601b6/">LinkedIn</a> | <a href="https://github.com/DaveDarshil07">GitHub</a></p>
+    <a class="download-resume" href="Darshil_Dave_Resume.pdf" download>Download Resume</a>
+  </header>
+
+  <section>
+    <h2 class="section-title">About Me</h2>
+    <p>Analytical and driven Data Analyst skilled in transforming complex data into actionable insights. Passionate about healthcare analytics, community impact, and predictive modeling. Experienced in SQL, Python, R, Power BI, Tableau, and TensorFlow.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, R, SQL</li>
+      <li><strong>Tools:</strong> Power BI, Tableau, TensorFlow, Jupyter Notebooks</li>
+      <li><strong>Analytics:</strong> Data Visualization, Predictive Modeling, Machine Learning</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Projects</h2>
+    <ul>
+      <li>
+        <strong>CNN Image Classifier:</strong> <a href="https://github.com/DaveDarshil07">GitHub</a> — Built a CNN using TensorFlow for image classification.
+        <img src="training_validation_accuracy.png" alt="Training vs Validation Accuracy">
+        <img src="confusion_matrix.png" alt="Confusion Matrix">
+      </li>
+      <li>
+        <strong>BMI and Obesity Prediction:</strong> Used regression models in R to analyze predictors and visualize health risk scores.
+        <img src="bmi_boxplot.png" alt="BMI Distribution by Category">
+        <img src="feature_importance.png" alt="Feature Importance">
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Experience</h2>
+    <ul>
+      <li><strong>Freelance Data Analyst</strong> (Feb 2023 – Present) — Created dashboards and statistical models for clients using SQL, R, Power BI, and Tableau.</li>
+      <li><strong>Walmart Canada, E-commerce Associate</strong> (Sep 2022 – Present) — Personalized customer experiences using data insights.</li>
+      <li><strong>YOLO, Community Manager</strong> (Sep 2020 – Aug 2023) — Led digital strategies, boosting online engagement and feedback analysis.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Education</h2>
+    <ul>
+      <li><strong>BSc, Data Science & Statistics</strong>, University of Manitoba (2021 – 2025)</li>
+      <li><strong>BSc, Computer Science</strong>, International College of Manitoba (2021 – 2022)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Darshil Dave. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+    function fadeSections() {
+      const sections = document.querySelectorAll('section');
+      sections.forEach((sec, i) => {
+        setTimeout(() => {
+          sec.style.opacity = 1;
+        }, i * 150);
+      });
+    }
+  </script>
+</body>
+</html>
